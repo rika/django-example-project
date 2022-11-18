@@ -1,0 +1,12 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/code
+    environment:
+      - EXAMPLE_SECRET_KEY="django-insecure-z3t1j=442pfca0n$p-ns=!jo)ry0svym1-n9o@qu3&kwup^g)9"

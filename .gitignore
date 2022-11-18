@@ -1,0 +1,43 @@
+# File types
+*.csv
+*.dump
+*.gz
+*.log
+*.mo
+*.pyc
+*.sql
+*.swn
+*.swo
+*.swp
+
+# OS files
+.DS_Store
+sprites-*.png
+ehthumbs.db
+Icon?
+Thumbs.db
+*~
+
+# Configuration files
+example/app/local_settings.py
+
+# Folders
+.sass-cache
+.bundle-gems
+.coverage
+.vscode
+.pytest_cache
+.pnpm-store
+__pycache__
+webpack-stats.json
+/app/static/webpack_bundles
+/assets/handlebars/*.js
+/node_modules
+/static
+/reports
+/uploads
+/htmlcov
+
+.idea/
+
+k8s/

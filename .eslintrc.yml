@@ -1,0 +1,27 @@
+env:
+  browser: true
+  node: true
+  amd: true
+  es6: true
+extends: 'eslint:recommended'
+parserOptions:
+  ecmaVersion: 2020
+  sourceType: module
+rules:
+  indent:
+    - error
+    - 4
+    - { "SwitchCase": 1 }
+  linebreak-style:
+    - error
+    - unix
+  quotes:
+    - error
+    - single
+  semi:
+    - error
+    - always
+ignorePatterns: ['example/app/static/vendor/**/*.js', 'node_modules/**/*.js', 'static/**/*.js']
+globals:
+  django: true
+  $: true
